@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Trip</title>
+    <link rel="stylesheet" href="styles/style-all.css" media="all">
+    <link rel="stylesheet" href="styles/media-query.css">
+    <link rel="stylesheet" href="estilos/style-print.css" media="print">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body onresize="showMenu()">
+    <header id="top">
+        <div id="logo">
+            <h1><img src="images/space.svg" alt=""></h1>
+        </div>
+        <div id="menuItems">
+            <i class="material-symbols-outlined" id="burgerMenu" onclick="clickMenu()">menu</i>
+            <nav id="menuOpen">
+                <ul>
+                    <li><a href="#telescope">Telescope</a></li>
+                    <li><a href="#astronaut">Astronaut</a></li>
+                    <li><a href="#spaceShip">Space Ship</a></li>
+                    <li><a href="#planet">Planet</a></li>
+                    <li><a href="#alien">Alien</a></li>
+                </ul>
+        </div>
+        </nav>
+    </header>
+    <main>
+        <div class="icon" id="telescope">
+            <img src="images/telescope.svg" alt="telescópio">
+        </div>
+
+        <div class="icon" id="astronaut">
+            <img src="images/austronaut.svg" alt="astronauta">
+        </div>
+
+        <div class="icon" id="spaceShip">
+            <img src="images/spaceship.svg" alt="nave espacial">
+        </div>
+        
+        <div class="icon" id="planet" >
+            <img src="images/planet.svg" alt="planeta">
+        </div>
+
+        <div class="icon" id="alien" >
+            <img src="images/alien.svg" alt="alienígena">
+        </div>
+
+        <p id="credit"><a href="https://br.freepik.com/vetores-gratis/elementos-do-espaco-icones_1045008.htm#query=space%20icons&position=0&from_view=search&track=ais&uuid=d4e72887-1046-4140-af8f-713fbf96e3ee" target="_blank">Images by macrovector</a> at Freepik</p>
+    </main>
+    <div id="up">
+        <a href="#top"><img src="images/arrow-up.svg" alt="seta subindo"></a>
+    </div>
+<footer>
+    <nav>
+        <ul>
+            <li><a href="#">The Show</a></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Episodes</a></li>
+            <li><a href="#">Characters</a></li>
+            <li><a href="#">Extras</a></li>
+        </ul>
+    </nav>
+    <p>Developed in 2023</p>
+</footer>
+<script>
+    function clickMenu() {
+        if (menuOpen.style.display == 'block') {
+            menuOpen.style.display = 'none'
+        } else {
+            menuOpen.style.display = 'block'
+        }
+    }
+
+    function showMenu() {
+        if (window.innerWidth >= 701) {
+            menuOpen.style.display = 'block'
+        } else {
+            menuOpen.style.display = 'none'
+        }
+    }
+</script>
+</body>
+</html>
