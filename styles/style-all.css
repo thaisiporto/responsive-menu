@@ -18,6 +18,8 @@ header {
     padding: 20px 15px;
     text-align: center;
     border-top: 10px solid #147cc9;
+    position: fixed;
+    width: 100%;
 }
 
 nav li {
@@ -47,7 +49,7 @@ div.icon {
     max-width: 300px;
     margin: 0 auto;
     height: 100vh;
-    padding-top: calc(50vh - 25vh);
+    padding-top: 50vh;
 }
 
 div.icon img {
